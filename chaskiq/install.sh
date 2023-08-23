@@ -37,20 +37,20 @@ echo "WS=ws://chat.rafaelb13.cloud/cable" >> .env
 echo "ADMIN_EMAIL=absam@absam.io" >> .env 
 echo "ADMIN_PASSWORD=Absam1042@" >> .env
 
-docker-compose build
+# docker-compose build
 
-docker-compose run rails bundle install
+# docker-compose run rails bundle install
 
-docker-compose run rails yarn install
+# docker-compose run rails yarn install
 
-docker-compose run rails rails db:setup 
+# docker-compose run rails rails db:setup 
 
-docker-compose run rails rails db:create
+# docker-compose run rails rails db:create
 
-docker-compose run rails rails db:schema:load
+# docker-compose run rails rails db:schema:load
 
-docker-compose run rails rails db:seed
+# docker-compose run rails rails db:seed
 
-docker-compose run rails rake admin_generator
+# docker-compose run rails rake admin_generator
 
-docker-compose up -d
+# docker-compose up -d
