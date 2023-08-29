@@ -34,8 +34,8 @@ echo \
 echo "HOST=http://chat.rafaelb13.cloud:3000" >> .env
 echo "ASSET_HOST=http://chat.rafaelb13.cloud:3000" >> .env
 echo "WS=ws://chat.rafaelb13.cloud/cable" >> .env
-echo "ADMIN_EMAIL=absam@absam.io" >> .env 
-echo "ADMIN_PASSWORD=Absam1042@" >> .env
+echo "ADMIN_EMAIL=" >> .env 
+echo "ADMIN_PASSWORD=" >> .env
 
 # docker-compose build
 
