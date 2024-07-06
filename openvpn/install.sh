@@ -51,5 +51,12 @@ for ((i=1; i<=total; i++)); do
 done
 echo -e "\n${NC}"
 
+URL="https://$(hostname -I | awk '{print $1}'):943/admin"
+USERNAME=openvpn
 PASSWORD=$(docker logs openvpn-as 2>/dev/null | grep "Auto-generated pass" | tail -n 1 | sed -n 's/.*Auto-generated pass = "\([^"]*\)".*/\1/p')
-echo "Password: $PASSWORD"
+
+echo 
+echo "============================ INFOS ============================"
+echo -e "URL: ${GREEN}$URL${NC}"
+echo -e "USERNAME: ${GREEN}$USERNAME${NC}"
+echo -e "PASSWORD: ${GREEN}$PASSWORD${NC}"
