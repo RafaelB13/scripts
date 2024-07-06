@@ -60,3 +60,14 @@ echo "============================ INFOS ============================"
 echo -e "URL: ${GREEN}$URL${NC}"
 echo -e "USERNAME: ${GREEN}$USERNAME${NC}"
 echo -e "PASSWORD: ${GREEN}$PASSWORD${NC}"
+
+output_file=$(pwd)/openvpn-infos.txt
+echo -e "\n============================ INFOS ============================" >> "$output_file"
+echo -e "URL: ${GREEN}$URL${NC}" >> "$output_file"
+echo -e "USERNAME: ${GREEN}$USERNAME${NC}" >> "$output_file"
+echo -e "PASSWORD: ${GREEN}$PASSWORD${NC}" >> "$output_file"
+echo
+echo -n "To show informations again, type: "
+echo -ne "${GREEN}cat $output_file${NC}"
+echo
+
